@@ -111,7 +111,7 @@ knn_model.fit(x_train_normal, y_train_normal)
 y_pred_knn = knn_model.predict(x_test_normal)
 
 model = y_pred_knn
-
+y_pred_knn = model.predict(X)
 accuracy = round(accuracy_score(y_test_normal,y_pred_knn),3)
 accuracy = round((accuracy * 100), 2)
 
