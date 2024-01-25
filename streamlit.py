@@ -16,10 +16,7 @@ import streamlit as st
 import time
 import pickle
 
-from google.colab import drive
-drive.mount('/content/drive')
-
-with open("/content/drive/MyDrive/DataSet/hungarian.data", encoding='Latin1') as file:
+with open("data/hungarian.data", encoding='Latin1') as file:
   lines = [line.strip() for line in file]
 
 data = itertools.takewhile(
